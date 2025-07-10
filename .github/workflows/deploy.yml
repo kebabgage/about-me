@@ -54,8 +54,15 @@ jobs:
           name: production-files
           path: ./app/dist
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./app/dist
+          folder: ./app/dist # The folder the action should deploy.
+
+
+    #   - name: Deploy to GitHub Pages
+    #     uses: peaceiris/actions-gh-pages@v3
+    #     with:
+    #       github_token: ${{ secrets.GITHUB_TOKEN }}
+    #       publish_dir: ./app/dist
+    #     # After deployment, find your GitHub Pages URL at: https://github.com/{username}/{repository}/settings/pages
