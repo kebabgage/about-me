@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo-example/app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@monorepo-example/submodule-1": "workspace:*",
+    "@monorepo-example/submodule-2": "workspace:*",
+    "rick-and-morty": "workspace:*"
+  }
+}

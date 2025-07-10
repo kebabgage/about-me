@@ -1,0 +1,3 @@
+[submodule "packages/rick-and-morty"]
+	path = packages/rick-and-morty
+	url = https://github.com/kebabgage/rick-and-morty.git
