@@ -8,7 +8,7 @@ import RickAndMorty from "rick-and-morty";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/about-me/">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/submodule-1" element={<SubModule1 />} />
